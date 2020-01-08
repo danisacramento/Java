@@ -7,13 +7,13 @@ public class Uri1047 {
 		Scanner teclado = new Scanner(System.in);
 
 		// entradas
-		System.out.println("Informe a hora inicial");
+		//ystem.out.println("Informe a hora inicial");
 		hi = teclado.nextInt();
-		System.out.println("Informe o minuto inicial");
+		//System.out.println("Informe o minuto inicial");
 		mi = teclado.nextInt();
-		System.out.println("Informe a hora final");
+		//System.out.println("Informe a hora final");
 		hf = teclado.nextInt();
-		System.out.println("Informe o minuto final");
+		//System.out.println("Informe o minuto final");
 		mf = teclado.nextInt();
 
 		if (hi == hf && mi == mf) {
@@ -23,7 +23,7 @@ public class Uri1047 {
 
 			if (mi > mf) {
 				duracaoMinutos = 60 - mi + mf;
-				
+				duracaoHoras--;
 				System.out.println("O JOGO DUROU " + duracaoHoras + " HORA(S) E " + duracaoMinutos + " MINUTO(S)");
 			} else if (mi <= mf) {
 				duracaoMinutos = mf - mi;
@@ -34,6 +34,7 @@ public class Uri1047 {
 
 			if (mi > mf) {
 				duracaoMinutos = 60 - mi + mf;
+				duracaoHoras--;
 			
 				System.out.println("O JOGO DUROU " + duracaoHoras + " HORA(S) E " + duracaoMinutos + " MINUTO(S)");
 			} else if (mi <= mf) {
