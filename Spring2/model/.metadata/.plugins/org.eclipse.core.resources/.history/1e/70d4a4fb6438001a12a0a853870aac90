@@ -1,0 +1,14 @@
+package br.org.generation.model.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Modeltestcontroller {
+	
+	@GetMapping("/bemvindo")
+	public String bemvindo() {
+		return "<h1>String</h1>";
+	}
+
+}

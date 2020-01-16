@@ -1,0 +1,23 @@
+package br.org.generation.model.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.org.generation.model.Produto;
+
+@RestController
+public class Modeltestcontroller {
+	
+	@GetMapping("/bemvindo")
+	public String bemvindo() {
+		return "<h1>Seja bem vindo</h1>";
+	}
+
+	@GetMapping("/produto")
+	public  produto() {
+	Produto produto =new Produto();
+	produto.setId("9");
+
+		return produto.toString();
+	}
+}
